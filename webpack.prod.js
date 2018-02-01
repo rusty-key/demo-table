@@ -69,7 +69,10 @@ module.exports = {
         NODE_ENV: JSON.stringify('production'),
       },
     }),
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      filename: 'build/index.html',
+      template: './app/index.html',
+    }),
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: false,
     }),

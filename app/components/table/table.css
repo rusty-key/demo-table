@@ -1,0 +1,55 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+
+  @mixin respond-to mobile {
+    display: block;
+  }
+
+  td, th {
+    padding: 5px 10px;
+    vertical-align: top;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  td {
+    padding-bottom: 15px;
+
+    @mixin respond-to mobile {
+      padding: 0 .25em 0 0;
+    }
+  }
+}
+
+.table-heading {
+  white-space: nowrap;
+
+  @mixin respond-to mobile {
+    display: none;
+  }
+
+  th {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    box-shadow: 0 1px 0 0 #000;
+  }
+}
+
+.table-col.is__wide {
+  width: 25%;
+}
+
+.table-body {
+  @mixin respond-to mobile {
+    display: block;
+  }
+}

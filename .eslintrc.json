@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb/legacy",
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "plugins": ["react"],
   "rules": {
     "vars-on-top": 0,
@@ -15,7 +15,7 @@
     "no-irregular-whitespace": 0,
     "no-return-assign": 0,
     "react/jsx-uses-vars": 1,
-    "no-unused-vars": ["error", { "varsIgnorePattern": "^h$" }]
+    "no-unused-vars": ["error"]
   },
   "env": {
     "node": true,

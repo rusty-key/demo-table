@@ -1,6 +1,2 @@
 node_modules
-vendor
-.build
-app/views
-app/assets/scripts/vendor
-editor/assets/scripts/lib/
+

@@ -1,0 +1,44 @@
+.tableEntry {
+  @mixin respond-to mobile {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.tableEntry-job {
+  margin-bottom: .35em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tableEntry-cell {
+  @mixin respond-to mobile {
+    line-height: 24px;
+
+    &.is__name {
+      font-size: 1.2em;
+      font-weight: bold;
+      line-height: 22px;
+    }
+
+    &.is__wide {
+      width: 100%;
+    }
+  }
+}
+
+.tableEntry-helper {
+  display: none;
+
+  @mixin respond-to mobile {
+    display: inline;
+  }
+}

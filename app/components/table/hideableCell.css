@@ -1,0 +1,26 @@
+.hideableCell-label {
+  display: none;
+  margin-top: 15px;
+  font-weight: bold;
+
+  @mixin respond-to mobile {
+    display: block;
+  }
+}
+
+.hideableCell-content {
+  .hideableCell.is__hidden & {
+    @mixin respond-to mobile {
+      display: none;
+    }
+  }
+}
+
+.hideableCell-icon {
+  display: inline-block;
+  margin-left: .3em;
+
+  .hideableCell.is__hidden & {
+    transform: rotate(-180deg);
+  }
+}
