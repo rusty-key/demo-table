@@ -10,7 +10,8 @@
   "scripts": {
     "serve": "webpack-dev-server --hot --history-api-fallback --env=dev",
     "build": "webpack -p --env=prod",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "shipit production deploy"
   },
   "author": "Rusty Key",
   "license": "ISC",
@@ -48,6 +49,7 @@
     "http-proxy-middleware": "^0.17.4",
     "jest": "^22.1.4",
     "react-test-renderer": "^16.0.0",
+    "shipit-deploy": "^2.5.1",
     "webpack-dev-server": "^2.9.3"
   },
   "jest": {

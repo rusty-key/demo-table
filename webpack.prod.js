@@ -70,7 +70,7 @@ module.exports = {
       },
     }),
     new HtmlWebpackPlugin({
-      filename: 'build/index.html',
+      filename: '.build/index.html',
       template: './app/index.html',
     }),
     new webpack.optimize.UglifyJsPlugin({
