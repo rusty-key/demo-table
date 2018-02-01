@@ -1,0 +1,32 @@
+{
+  "extends": "airbnb/legacy",
+  "plugins": ["react"],
+  "rules": {
+    "vars-on-top": 0,
+    "func-names": 0,
+    "no-new": 0,
+    "space-before-function-paren": [2, "never"],
+    "semi": [2, "never"],
+    "no-param-reassign": 0,
+    "comma-dangle": ["error", "always-multiline"],
+    "no-underscore-dangle": 0,
+    "global-require": 0,
+    "no-mixed-operators": 0,
+    "no-irregular-whitespace": 0,
+    "no-return-assign": 0,
+    "react/jsx-uses-vars": 1,
+    "no-unused-vars": ["error", { "varsIgnorePattern": "^h$" }]
+  },
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}

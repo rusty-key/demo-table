@@ -1,0 +1,5 @@
+@define-mixin respond-to $media {
+  @if $media == mobile {
+    @media only screen and (max-width: 720px) { @mixin-content; }
+  }
+}

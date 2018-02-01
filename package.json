@@ -1,0 +1,64 @@
+{
+  "name": "demo-table",
+  "version": "1.0.0",
+  "description": "Demo Table",
+  "main": "app/app.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stfoo/demo-table.git"
+  },
+  "scripts": {
+    "serve": "webpack-dev-server --hot --history-api-fallback --env=dev",
+    "build": "webpack -p --env=prod",
+    "test": "jest"
+  },
+  "author": "Rusty Key",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "cssnano": "^3.10.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "image-webpack-loader": "^4.0.0",
+    "postcss-calc": "^6.0.1",
+    "postcss-conditionals": "^2.1.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^2.0.8",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-scss": "^1.0.2",
+    "postcss-simple-vars": "^4.1.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
+    "style-loader": "^0.20.1",
+    "webpack": "^3.8.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^22.1.0",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.6.1",
+    "http-proxy-middleware": "^0.17.4",
+    "jest": "^22.1.4",
+    "react-test-renderer": "^16.0.0",
+    "webpack-dev-server": "^2.9.3"
+  },
+  "jest": {
+    "modulePaths": [
+      "app"
+    ],
+    "testMatch": [
+      "**/spec/**/?(*)Spec.js"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.jsx$": "babel-jest"
+    }
+  }
+}
