@@ -6,7 +6,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 module.exports = {
   entry: './app/app.js',
   output: {
-    filename: './.build/app.js',
+    filename: 'app.js',
+    path: path.resolve(__dirname, '.build'),
+    publicPath: '/',
   },
   resolve: {
     modules: [
@@ -70,14 +72,14 @@ module.exports = {
       },
     }),
     new HtmlWebpackPlugin({
-      filename: '.build/index.html',
+      filename: 'index.html',
       template: './app/index.html',
     }),
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: false,
     }),
     new ExtractTextPlugin({
-      filename: '.build/app.css',
+      filename: 'app.css',
     }),
   ],
 }
